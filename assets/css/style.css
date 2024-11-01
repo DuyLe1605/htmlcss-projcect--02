@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+/* :root {
+} */
+
+*,
+html {
+    scroll-behavior: smooth !important;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}

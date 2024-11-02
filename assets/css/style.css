@@ -55,10 +55,10 @@ a {
     padding: 3.6rem 0 0.8rem;
 }
 
-.body ul {
+.header .body ul {
     display: flex;
 }
-.body .nav {
+.header .body .nav {
     margin-left: auto;
 }
 .nav a {
@@ -88,4 +88,95 @@ a {
 .header .signup-btn {
     min-width: 14.4rem;
     margin-left: 4.9rem;
+}
+
+/* Hero */
+.hero {
+    background-color: #fffcf4;
+    height: calc(100vh - 9.4rem);
+    padding-top: 6.4rem;
+}
+.hero .body {
+    display: flex;
+}
+/* Hero Left */
+.hero .media-block {
+    width: 48%;
+}
+
+.hero .media-block {
+    position: relative;
+}
+.hero .media-block .img {
+    width: 47rem;
+    height: 68.5rem;
+    object-fit: cover;
+    object-position: center;
+}
+.media-block .card {
+    width: 27rem;
+    border-radius: 1.2rem;
+    background: #fff;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    bottom: 4.8rem;
+    left: 30rem;
+    padding: 2.4rem;
+}
+
+.media-block .card .item {
+    display: flex;
+    gap: 1.6rem;
+}
+.media-block .card .item + .item {
+    margin-top: 2.2rem;
+}
+.media-block .card .icon {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.media-block .card .item .y {
+    background-color: #fff9e8;
+}
+.media-block .card .item .p {
+    background-color: #fcefff;
+}
+.media-block .card .item .b {
+    background-color: #ebeaff;
+}
+
+.card .label {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.card .title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem; /* 166.667% */
+}
+.cta-group .img {
+    height: 12px;
+    width: 12px;
+    background-color: orange;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
+
+.hero strong {
+    color: #171100;
+    font-family: Sen;
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+
+/* Hero right */
+.hero .content-block {
+    width: 52%;
+    padding: 0 0 0 13rem;
 }

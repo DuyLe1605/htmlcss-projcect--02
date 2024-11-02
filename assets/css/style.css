@@ -36,10 +36,13 @@ a {
     text-align: center;
     font-size: 1.6rem;
     font-weight: 600;
-    border-radius: 2.45rem;
+    border-radius: 999px;
     background: #171100;
     line-height: 5rem;
     min-width: 11.8rem;
+}
+.btn:hover {
+    opacity: 0.9;
 }
 /* Header */
 .header {
@@ -48,6 +51,7 @@ a {
 .header.fixed {
     position: sticky;
     top: -2.8rem;
+    z-index: 1;
 }
 .header .body {
     align-items: center;
@@ -93,7 +97,7 @@ a {
 /* Hero */
 .hero {
     background-color: #fffcf4;
-    height: calc(100vh - 9.4rem);
+
     padding-top: 6.4rem;
 }
 .hero .body {
@@ -161,6 +165,48 @@ a {
     font-weight: 600;
     line-height: 3rem; /* 166.667% */
 }
+
+/* Hero right */
+.hero .content-block {
+    width: 52%;
+    padding: 6.4rem 0 0 13rem;
+}
+
+.hero .content-block .heading {
+    padding: 0 0 2.2rem;
+    width: 47rem;
+    color: #171100;
+    font-family: Sen;
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 6.8rem;
+    letter-spacing: -0.116rem;
+}
+.hero .content-block .desc {
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem; /* 166.667% */
+}
+
+.hero .content-block .cta-group {
+    padding: 3.8rem 0 4.8rem;
+    display: flex;
+    align-items: center;
+}
+.cta-group .hero-cta {
+    border-radius: 3.2rem;
+    background: #ffb900;
+    min-width: 18rem;
+    line-height: 6.4rem;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.hero .content-block .desc:last-child {
+    padding-top: 1rem;
+}
 .cta-group .img {
     height: 12px;
     width: 12px;
@@ -168,15 +214,38 @@ a {
     clip-path: polygon(0 0, 0% 100%, 100% 50%);
 }
 
-.hero strong {
+.hero .watch-video {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    margin-left: 2.8rem;
+    align-items: center;
+    cursor: pointer;
+}
+.hero .watch-video .icon {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    background-color: #fff;
+    box-shadow: 0px 0.8rem 1.6rem rgba(0 0 0/0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero .stats strong {
     color: #171100;
     font-family: Sen;
     font-size: 4.4rem;
     font-weight: 700;
+    padding-right: 1rem;
 }
-
-/* Hero right */
-.hero .content-block {
-    width: 52%;
-    padding: 0 0 0 13rem;
+.stats strong:last-child {
+    padding-left: 2.8rem;
+}
+.cta-group span {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    margin-left: 1.4rem;
 }

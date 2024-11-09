@@ -49,6 +49,7 @@ a {
 .line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp, 1);
+    line-clamp: var(--line-clamp, 1);
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -453,4 +454,178 @@ a {
     font-size: 2.6rem;
     font-style: italic;
     line-height: 1.54; /* 153.846% */
+}
+
+/* Feartures */
+.features .body {
+    display: flex;
+    margin-top: 20rem;
+    justify-content: space-between;
+}
+.features .image {
+    display: flex;
+
+    width: 57rem;
+    height: 43.8rem;
+    position: relative;
+}
+.features .image img {
+    width: 27rem;
+    height: 40.4rem;
+    border-radius: 1.6rem;
+    object-fit: cover;
+    position: absolute;
+}
+.features .content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.features .content .heading {
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    letter-spacing: -0.076rem;
+}
+.features .content .desc {
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    margin: 1.6rem 0;
+}
+.features .content .btn {
+    width: 13.7rem;
+    margin-top: 1.6em;
+    background-color: var(--primary-color);
+}
+/* Features 2 */
+.features-2 .body {
+    flex-direction: row-reverse;
+}
+
+.features-2 .body .image {
+    width: 40%;
+}
+.features-2 .body .image img {
+    width: 47rem;
+    height: 44rem;
+    border-radius: 2rem;
+}
+.features-2 .body .content {
+    width: 49%;
+}
+
+/* Blog */
+.blog {
+    background-color: #fffcf4;
+    padding: 9.6rem 0;
+    margin-top: 20rem;
+}
+.blog .blog-top {
+    text-align: center;
+}
+.blog .blog-top .heading {
+    color: #130606;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    letter-spacing: -0.076rem;
+}
+.blog .blog-top .desc {
+    margin: 1.6rem auto 0;
+    width: 44.8rem;
+    color: #696262;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+
+.blog .blog-list {
+    display: flex;
+    gap: 3rem;
+}
+.blog-list .item {
+    width: 33.3%;
+    border-radius: 1.6rem;
+    background: #fff;
+    transition: 0.25s ease;
+}
+.blog-list .item:hover {
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.blog-list .item .thumb {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1.6rem 1.6rem 0rem 0rem;
+}
+.blog-list .item .info {
+    padding: 2rem 2rem 2.8rem;
+}
+.blog-list .item .info .date {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    position: relative;
+    padding-bottom: 1.2rem;
+}
+.blog-list .item .info .date::before {
+    content: "";
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+.blog-list .item .info .date::after {
+    content: "";
+    display: inline-block;
+    right: -2.7rem;
+    height: 0.1rem;
+    border-radius: 0.05rem;
+    background: #e2dfda;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.blog-list .item .info .title a {
+    display: inline-block;
+    margin: 1.2rem 0;
+    color: #171100;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+}
+.blog-list .item .info .btn {
+    transition: 0.25s ease;
+    font-size: 1.4rem;
+}
+.blog-list .item .info .btn:hover {
+    background-color: var(--primary-color);
+}
+.blog .dots {
+    margin-top: 38px;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    cursor: pointer;
+}
+.blog .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #5f5b53;
+}
+.blog .dot.active {
+    background-color: var(--primary-color);
+    cursor: default;
 }
